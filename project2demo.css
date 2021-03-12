@@ -2,38 +2,97 @@ body{
     font-family: "Raleway", "Sans serif";
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
 .header{
     display: flex;
     margin: auto;
     align-items: center;
     max-width: 100%;
 }
+.ins{
+    order: 1;
+}
 .logo{
     height: 40px;
-    padding-left: 20px;
+    padding-left:0 32px;
 }
+
 .nav{
     font-weight: bolder;
+}
+.nav:hover{
+    color: #0065fc;
 }
 
 .header a{
     text-decoration: none;
     padding: 40px 20px; 
 }
+
 .heb{
-    margin-left: auto;
     color: #0065fc;
     border-top: 3px solid #0065fc;
 }
+
 .act{
     color: black;
+    margin-left: auto;
+} 
+@media screen and (min-width:600px){
+    .header2{
+        /* visibility: hidden; */
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    .header{
+        /* visibility: hidden; */
+        display: none;
+    }
+    .header2 a{
+        text-decoration: none;
+    }
+    .header2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100px;
+    }
+    .nav2{
+        font-weight: bolder;
+        width: 45%;
+    }
+    .logo2{
+        text-align: center;
+        
+    }
+    
+    .heb2{
+        border-bottom: 3px solid #f2f2f2;
+        color: #0065fc;
+        text-align: center;
+        padding-left: 15px;
+        
+    }
+    
+    .ins2{
+        text-align: center; 
+        padding-left: 35px;  
+    }
+    .act2{
+        color: black;
+       text-align: center;
+       border-bottom: 3px solid #0065fc;
+    }
 }
 
 .main{
     max-width: 1440px;
     margin: auto;
-    padding:0 30px;
+    padding: 0 2rem;
     box-sizing: border-box;
 }
 .firstline{
@@ -42,7 +101,7 @@ body{
 .form{
     display: inline-flex;
     max-width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 .span{
     background-color: #f2f2f2;
@@ -79,8 +138,13 @@ body{
     border-radius:0 1rem 1rem 0;
     padding:0 1.5rem;
     font-family:"Raleway","Sans serif";
-    font-size:1rem;cursor:pointer;
+    font-size:1rem;
+    cursor:pointer;
 }
+.inputbutton{
+    display: block;
+}
+
 
 .filters{
     display: flex;
@@ -92,6 +156,7 @@ body{
     display:flex;
     align-items:center;
 }
+
 .allfilters{
     display: flex;
     align-items: center;
@@ -100,6 +165,11 @@ body{
     border-radius: 2rem;
     margin-bottom: 1rem;
     cursor: pointer;
+}
+.allfilters:hover{
+    transition-duration:.1s;
+    cursor:pointer;
+    transform:scale(1.015)
 }
 .firstfilter{
     background-color:#deebff;
@@ -111,7 +181,7 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:-2px;
+    margin-right: 2px;
 }
 .searchFiltersFilterWrapiconIcon{
     color:blue;
@@ -134,276 +204,456 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-right:1rem;
+    margin-right:1rem; 
+    
 }
-.searchResultWrapiconIcon{
-    color:#0065fc;
+.signlogo{
+    color: #0065fc;
+}
+
+
+@media screen and (max-width:600px){
+    .main{
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .search{
+        margin-top: 40px;
+        padding: 0 2rem;
+    }
+    .form{
+        display: flex;
+        width: 100%;
+    }
+    .placeholder{
+        flex: 1;
+        width: 12rem;
+    }
+    .submit{
+        padding: 0 1rem;
+        border-radius: 0.8rem;
+    }
+    .inputbutton{
+        display: none;
+    }
+    .searchbutton{
+        display: block i ;
+        color: white;
+    }
+    .allfilters{
+        margin-right: 10px;
+    }
+    .writing{
+        width: 100%;
+        padding: 0;
+    }
+    .firstfilter{
+        min-width: 0;
+        min-height: 0;
+        margin-right: 0;
+
+    }
+    .text{
+        margin:0 0.5rem;
+        font-size: 14px;
+    }
+    .firstline{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:600px){
+    .searchbutton{
+        display: none !important;
+    }
 }
 
 
-.footer{
-    max-width: 100%;
-    background-color: grey;
-}
-
-.box{
-    max-width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    margin: auto;
-    padding: 0 2rem;
-}
-
-.sotobox{
-    width: 30%;
-    padding: 1rem;
-}
-.link{
-    display: block;
-    margin: 1rem 0;
-    text-decoration: none;
-}
-.link:hover{
-    text-decoration: underline;
-}
 /*main*/
-.main{
-    max-width: 1440px;
-    margin:  auto;
-    padding: 0 2rem;
+.mainbbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 0 30px; */
     box-sizing: border-box;
+    max-width: 1440px;
 }
-
-.jegulopochondo,
-.puroframeMain{
-    background-color: #f2f2f2;
-    border-radius:  24px;
-    padding: 32px;
+.mainboxtitle h2{
+    padding-left: 1rem;
 }
-
 .puroframe{
-    display: grid;
-    column-gap: 32px;
-    grid-template-columns: 6fr 3fr;
+    background-color:#f2f2f2;
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    padding: 30px;
 }
 
-.puroframeMain{
-    display: grid;
-    column-gap: 32px;
-    row-gap: 32px;
-    grid-template-columns:1fr;
-    grid-template-columns: repeat(3, 1fr);
+.gallery{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
 }
-
-.etarHeading{
-    grid-column: 1/-1;
-}
-
-.etartitle{
-    margin: 0;
-}
-.puroframeCard{
+.aframe{
     background-color: #fff;
     padding: 6px;
-    border-radius: 20px;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
+    box-shadow: 0 0 16px #000000;
+    margin-bottom: 20px;
+    width: 30%;
+    /* height: auto;  */
+    background-color: white;
     box-sizing: border-box;
-    height: 100%;
+    /* line-height: 0; */
+    text-decoration: none;
+    border-radius: 20px;
 }
-
-.puroframeCard:hover{
-    transform:scale(1.02);
+.aframe:hover{
+    transform: scale(1.02);
 }
-
-.etarmukh{
-    margin: 0;
-}
-
-.etarmukherImg{
+.imgdiv{
+    /* height: 60%; */
     height: 7rem;
-    object-fit: cover;
-    max-width: 100%;
     width: 100%;
-    max-height: 100%;
-    border-radius: 1 rem 1rem 0 0;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
 }
-
 .etarmukherCaptionTitle{
     margin: 4px 12px 0 12px;
 }
-
+.etarmukherImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
 .etarmukherDescription{
     margin: 4px 12px 4px 12px;
 }
 .etarmukherstrong{
     font-weight: bold;
-}
-
+ }
+ .pochondertitle{
+     font-size: 20px;
+     display: flex;
+     justify-content: space-between;
+ }
 .etarmukhertaragulo{
-    margin: 0 12px 4px 12px;
+    display: flex;
+    padding-left: 10px;
 }
-
 .etarmukhertaragulorekta[data-active="true"]{
     color: #0065fc;
 }
 .etarmukhertaragulorekta[data-active="false"]{
     color:#d9d9d9;
 }
-
 .etaarodekha{
     font-weight: bold;
+    padding: 1rem;
+    color: black;
+}
+.jegulopochondo{
+    width: 26%;
+    /* height: 680px; */
+    background-color:#f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+}
+.gallery2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 90%;
+    min-width: 18rem;
 }
 
-.jegulopochondo{
-    display: grid;
-    row-gap: 32px;
-    align-items: start;
-    grid-template-rows: auto repeat(3, 1fr);
-}
-.pochondertitle{
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
 .pochondersrc{
+    background-color: #fff;
+    padding: 6px;
+    box-shadow: 0 0 16px #000000;
     display: flex;
-    align-items: stretch;
-    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8.5rem; 
+    border-radius: 20px;
+    min-width: 18rem;
 }
 
 .pochondermukh{
-    position: relative;
-    min-height: 100%;
-    width: 45%;
-    min-width: 45%;
-    max-width: 45%;
-}
-
-.pochondermukherImg{
+    width: 40%;
     border-radius: 1rem 0 0 1rem;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
-
+.pochondermukherCaptionTitle{
+    font-size: 16px;
+}
+.pochondermukherDescription{
+    font-size: 15px;
+}
 .pochondermukherContent{
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+}
+.pochondermukherImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+.pochondertaragulorekta[data-active=true]{
+    color:#0065fc;
+}
+.pochondertaragulorekta[data-active=false]{
+    color: #d9d9d9;
+}
+.shadajaga{
+    /* height: 30px; */
 }
 
-.shadajaga{
-    flex: 1;
-}
-.jegulopochondo puroframeCard{
-    height: 150px;
-}
-/**
-@media (max-width: 1440px) {
+.ditio{
+    
+} 
+@media screen and (max-width:600px){
+    .mainbbox{
+        flex-direction: column-reverse;
+        padding: 0 1rem;
+    }
     .puroframe{
-        grid-template-columns:1fr;
-        row-gap: 32px;
+        background-color: white;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        margin-top: 20px;
     }
     .jegulopochondo{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto 320px;
-        column-gap: 32px;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+    .gallery2{
+        width: 90%;
+        padding: 20px;
+    }
+    .gallery{
+        padding: 0 20px;
+        
+        
+    }
+    .mainboxtitle{
+        padding: 0 20px;
     }
     .pochondertitle{
-        grid-column: 1/-1;
+        padding:0 20px;
     }
-}
-@media (min-width: 925px){
-    .puroframeMain{
-        grid-template-columns: repeat(3, 1fr);
+    .aframe{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: none;
     }
-}
-@media (max-width: 925px) and (min-width: 650px){
-    .puroframeMain{
-        grid-template-columns: 1fr 1fr;
+    .pochondersrc{
+        margin-bottom: 20px;
     }
-}
-@media (max-width: 650px){
-    .puroframeMain{
-        grid-template-columns: 1fr;
+    .pochondermukherContent{
+        font-size: 14px;
     }
-}
-@media (max-width: 1000px){
-    .jegulopochondo{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto repeat(3,9rem);
-    }
-}
-**/
 
-
-
-
-
-
-/*cativity and footer*/
-
-.borota{
-    max-width: 1440px;
-    display: flex;
-}
-
-.chotota{
-    width: 25%;
-    height: 350px;
-    border-radius: 5%;
-}
-.pro{
-    width: 100%;
-    height: 50%;
-    border-radius: 5%;
-}
-.dit{
-    width: 100%;
-    height: 50%;
-    border-radius: 5%;
-}
-
-.Img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-}
-.baksho{
-    display: flex;
-    flex-direction: column;
-    border-radius: 5%;
-}
-.img{
-    width: 100%;
-    height: 93%;
-}
-.text h3{
-    margin: 0;
-    padding: 0;
     
 }
-.activityimage{
+
+/*cativity and footer*/
+.activity{
+    /* margin-left: 30px; */
+    margin: 2rem;
+}
+.borota{
+    max-width: 1440px;
+    height:400px;
+    display:flex;
+    justify-content: space-between;
+}
+.acti{
+    margin: 0;
     text-decoration: none;
+    line-height: 0;
+    border-radius: 1rem;
+    color: black;
+    font-weight: bold;
 }
-.Image {
-    height: 150px;
+.activity h3{
+    font-size: 15px;
+    /* margin: 15px; */
+}
+.prothomta{
+    height: 100%;
+    width: 24%;
+    border-radius: 1rem;
+    background-color: white;
+}
+.prothomtaimg{
+    height: 90%;
     width: 100%;
-    border-radius: 5%;
+    border-radius: 1rem;
 }
+
+.ditiota{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 24%;
+    justify-content: space-between;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 1rem;
+}
+.ditioprothomta{
+    height: 55%;
+    width: 100%;
+}
+.ditioprothomtaimg{
+    width: 100%;
+    height: 90%;
+}
+
+
+.ditioditiota{
+    height: 40%;
+    width: 100%;
+}
+.ditioditiotaimg{
+    width: 100%;
+    height: 75%;
+}
+
+
+.tritiota{
+    height: 100%;
+    width: 24%;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 1rem;
+}
+.tritiotaimg{
+    height: 90%;
+    width: 100%;
+}
+
+.lasta{
+    height: 100%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 1rem;
+}
+.lastaprothomta{
+    height: 48%;
+    width: 100%;
+}
+.lastaprothomtaimg{
+    width: 100%;
+    height: 80%;
+}
+
+
+.lastaditiota{
+    height: 50%;
+    width: 100%;
+}
+.lastaditiotaimg{
+    width: 100%;
+    height: 80%;
+}
+
+.chotoimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+@media screen and (max-width:600px){
+    .activity{
+        padding: 0 32px;
+        margin: 0;
+    }
+    .atitle{
+
+    }
+    .borota{
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        height: auto;
+    }
+    .prothomta, .tritiota {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .ditiota{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        margin: 0;
+    }
+    .ditioprothomta, .ditioditiota{
+        width: 100%;
+        height: auto;
+        
+    }
+    .lasta{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        height: auto;
+        margin: 0;
+    }
+    .lastaprothomta, .lastaditiota{
+        width: 100%;
+        height: auto;
+        
+    }
+    .borota h3{
+        height: auto;
+        padding-left: 20px;
+        margin-bottom: 10px;
+
+    }
+    .chotoimg{
+        height: 150px;
+    }
+}
+
+
+/* Footer Beginning */
 .footer{
     margin-top: 30px;
     background-color:#f2f2f2;
     width: 100%;
+    
+}
+.box a{
+    color: black;
 }
 .box{
     display:flex;
     max-width:100%;
     width:100%;
     margin:auto;
-    padding:0 2rem;
+    /* padding:0 2rem; */
     box-sizing:border-box;
 }
 .miniBox{
@@ -417,4 +667,22 @@ body{
 }
 .flink:hover{
     text-decoration:underline;
+}
+@media screen and (max-width:600px){
+    .footer{
+        margin-top: 2rem;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .miniBox{
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        padding: 32px;
+    }
+    .fTitle{
+        margin: auto;
+    }
 }
