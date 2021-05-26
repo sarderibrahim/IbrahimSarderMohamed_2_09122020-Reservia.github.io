@@ -392,7 +392,9 @@ a{
     border-radius: 20px;
     min-width: 18rem;
 }
-
+.pochondersrc:hover{
+    transform: scale(1.02);
+}
 .pochondermukh{
     width: 40%;
     border-radius: 1rem 0 0 1rem;
@@ -521,7 +523,11 @@ a{
     width: 24%;
     border-radius: 1rem;
     background-color: white;
+    box-shadow: 0 0 16px #f4dede;
     
+}
+.prothomta:hover{
+    transform: scale(1.02);
 }
 .prothomtaimg{
     height: 90%;
@@ -543,7 +549,11 @@ a{
 .ditioprothomta{
     height: 55%;
     width: 100%;
-    
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #f4dede;
+}
+.ditioprothomta:hover{
+    transform: scale(1.02);
 }
 .ditioprothomtaimg{
     width: 100%;
@@ -554,7 +564,11 @@ a{
 .ditioditiota{
     height: 40%;
     width: 100%;
-    
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #f4dede;
+}
+.ditioditiota:hover{
+    transform: scale(1.02);
 }
 .ditioditiotaimg{
     width: 100%;
@@ -568,7 +582,11 @@ a{
     margin-left: 15px;
     background-color: white;
     border-radius: 1rem;
+    box-shadow: 0 0 16px #f4dede;
     
+}
+.tritiota:hover{
+    transform: scale(1.02);
 }
 .tritiotaimg{
     height: 90%;
@@ -588,7 +606,11 @@ a{
 .lastaprothomta{
     height: 48%;
     width: 100%;
-    
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #f4dede;
+}
+.lastaprothomta:hover{
+    transform: scale(1.02);
 }
 .lastaprothomtaimg{
     width: 100%;
@@ -599,7 +621,11 @@ a{
 .lastaditiota{
     height: 50%;
     width: 100%;
-    
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #f4dede;
+}
+.lastaditiota:hover{
+    transform: scale(1.02);
 }
 .lastaditiotaimg{
     width: 100%;
@@ -627,10 +653,10 @@ a{
     .prothomta, .tritiota {
         width: 100%;
         height: auto;
-        margin: 0;
+        margin: 0 0 1rem 0; 
         box-shadow: 0 0 16px #000000;
         border-radius: 1rem;
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
         padding-bottom: 1rem;
     }
     .ditiota{
