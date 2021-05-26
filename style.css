@@ -1,6 +1,7 @@
 body{
     font-family: "Raleway", "Sans serif";
     margin: 0;
+    max-width: 1440px;
 }
 a{
     text-decoration: none;
