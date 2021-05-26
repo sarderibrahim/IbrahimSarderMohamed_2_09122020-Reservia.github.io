@@ -64,8 +64,9 @@ a{
         height: 100px;
     }
     .nav2{
-        font-weight: bolder;
-        width: 45%;
+        /* font-weight: bolder; */
+        width: 50%;
+        box-sizing: border-box;
     }
     .logo2{
         text-align: center;
@@ -87,7 +88,8 @@ a{
         justify-content: flex-end;
         align-items: center;
         color: #0065fc;
-        font-weight: 810;
+        font-weight: 700;
+        padding-right: 32px;
     }
     .act2{
         color: black;
