@@ -113,7 +113,6 @@ a{
 .form{
     display: inline-flex;
     max-width: 100%;
-    /* overflow: auto; */
 }
 .span{
     background-color: #f2f2f2;
@@ -121,7 +120,7 @@ a{
     border-radius: 1rem 0 0 1rem;
     text-align: center;
 }
-.searchFormWrapiconIcon{
+.mapIcon{
     margin-left:.1rem;
 }
 .placeholder{
@@ -164,9 +163,9 @@ a{
     margin-top: 2rem;
 }
 .writing{
-    margin:0 2rem 1rem 0;
     display:flex;
     align-items:center;
+    margin:0 1rem 1rem 0;
 }
 
 .allfilters{
@@ -184,16 +183,18 @@ a{
     transform:scale(1.015)
 }
 .firstfilter{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     background-color:#deebff;
     border-radius:100%;
     height:3rem;
     width:3rem;
-    min-height:3.5rem;
-    min-width:3.5rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    min-height:2.5rem;
+    min-width:2.5rem;
     margin-right: 2px;
+    
+    
 }
 .signIcon{
     color:#0065fc;
@@ -492,6 +493,7 @@ a{
     }
     .pochondersrc{
         min-width: 21rem;
+        margin-bottom: 2rem;
 
     }
 
