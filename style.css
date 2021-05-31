@@ -1,104 +1,88 @@
 body{
     font-family: "Raleway", "Sans serif";
-    margin: 0;
+    margin: auto;
     max-width: 1440px;
 }
-a{
+a {
     text-decoration: none;
 }
-.header{
-    display: flex;
-    margin: auto;
+
+header{
+    display: grid;
+    justify-content: center;
     align-items: center;
-    max-width: 100%;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo . hebs acti insc";
 }
-.ins{
-    order: 1;
-    font-weight: bolder;
-}
+
 .logo{
+    grid-area: logo;
     height: 40px;
-    padding:0;/*ekhane modify koreci */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-
+.logos{
+    padding: 2rem;
+}
 .nav{
-    
-    color: #0065fc;
+    color: #0065dc;
+    padding: 2rem;
+    font-weight: 500;
 }
-.nav:hover{
-    color: #0065fc;
-}
-
-.header a{
-    text-decoration: none;
-    padding: 2.5rem 2rem; 
-}
-
 .heb{
-    margin-left: auto;
-    color: #0065fc;
-    border-top: 3px solid #0065fc;
+    grid-area: hebs;
+    border-top: 3px solid #0065dc;
 }
 
 .act{
-    color: black;
-    
-} 
-@media screen and (min-width:600px){
-    .header2{
-        /* visibility: hidden; */
-        display: none;
-    }
+    grid-area: acti;
 }
-@media screen and (max-width:600px){
+
+.activ{
+    color: black;
+}
+.activ:hover{
+    color: #0065dc;
+}
+.ins{
+    grid-area: insc;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
     .header{
-        /* visibility: hidden; */
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo insc"
+        "hebs acti";
     }
-    .header2 a{
-        text-decoration: none;
+    .nav{
+        padding: 1rem 2rem;
     }
-    .header2{
+    .heb{
+        grid-area: hebs;
+        border-top: none;
+        border-bottom: 3px solid #0065dc;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100px;
+        justify-content: center;
     }
-    .nav2{
-        /* font-weight: bolder; */
-        width: 50%;
-        box-sizing: border-box;
+    .act{
+        grid-area: acti;
+        border-bottom: 3px solid #f2f2f2;
+        display: flex;
+        justify-content: center;
     }
-    .logo2{
-        /* text-align: center; */
-        padding: 0 2rem;
-        
-    }
-    
-    .heb2{
-        border-bottom: 3px solid #0065fc;
-        color: #0065fc;
-        /* text-align: center; */
-        padding: 0 2rem;
-        
-    }
-    
-    .ins2{
-        /* text-align: right;  */
-        /* padding-left: 35px;   */
+    .ins{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        color: #0065fc;
         font-weight: 700;
-        padding-right: 32px;
     }
-    .act2{
-        color: black;
-       text-align: center;
-       border-bottom: 3px solid #f2f2f2;
-    }
+    
 }
 
 .main{
@@ -322,6 +306,7 @@ a{
     /* line-height: 0; */
     text-decoration: none;
     border-radius: 20px;
+    color: black;
 }
 .aframe:hover{
     transform: scale(1.02);
@@ -394,6 +379,13 @@ a{
     height: 8.5rem; 
     border-radius: 20px;
     min-width: 18rem;
+    color: #000000;
+}
+.shadajaga{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
 }
 .pochondersrc:hover{
     transform: scale(1.02);
@@ -404,9 +396,11 @@ a{
 }
 .pochondermukherCaptionTitle{
     font-size: 16px;
+    margin-bottom: 0;
 }
 .pochondermukherDescription{
     font-size: 15px;
+    margin-top: 0;
 }
 .pochondermukherContent{
     width: 50%;
@@ -414,6 +408,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    justify-content: space-between;
 }
 .pochondermukherImg{
     width: 100%;
@@ -704,6 +699,7 @@ a{
     }
     .chotoimg{
         height: 150px;
+        object-fit: cover;
     }
 }
  @media (min-width:600px) and (max-width:900px){
