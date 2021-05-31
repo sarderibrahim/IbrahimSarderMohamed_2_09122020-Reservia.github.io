@@ -10,36 +10,30 @@
 
   </head>
     <body>
-        
-    <!-- first creation of a header -->
+        <!-- header -->
 
-    <header class="header">
-            <a href="#" class="nav logo">
-                <img src="Reservia.png" alt="Reservia" class="logo">
-            </a>
-            <a href="#" class="nav ins">S'inscrire</a>
-            <!-- <div  class="nav majherta"> -->
-                <a href="#link1" class="nav heb" data-active="true">Hébergement</a>
-                <a href="#link2" class="nav act" data-active="false"> Activités</a>
-            <!-- </div> -->
-        
-        </header>
-
-        <header class="header2">
-            <a href="#" class="nav2 logo2">
-                <img src="Reservia.png" alt="Reservia" class="logo" >
-            </a>
-            <a href="#" class="nav2 ins2">S'inscrire</a>
-            
-            <a href="#link1" class="nav2 heb2">Hébergement</a>
-            <a href="#link2" class="nav2 act2">Activités</a>
-        
+        <header class="header">
+            <div class="logo" id="logo">
+                <a href="#" class="logos">
+                    <img src="Reservia.png" alt="Reservia" class="logo">
+                </a>
+            </div>
+            <!-- <div class="spacevide" id="spacevid"></div> -->
+            <div class="nav heb" id="hebs">
+                <a href="#hebergement" class="heber" >Hébergement</a>
+            </div>
+            <div class="nav act" id="acti">
+                <a href="#activites"  class="activ" >Activités</a>
+            </div>
+            <div class="nav ins" id="insc">
+                <a href="#">S'inscrire</a>
+            </div>
         </header>
 
     <!-- End of header -->
 
     <!-- The main part -->
-    <div class="main" id="link1">
+    <div class="main" >
         <!-- The beginning of Search part -->
             <div class="search">
                 <div class="writingpart">
@@ -96,7 +90,7 @@
             <!--main- slide  -->
             <!-- Puroframe -->
             <div class="mainbbox">
-                <div class="puroframe">
+                <div class="puroframe" id="hebergement">
                     <h3 class="mainboxtitle">
                         Hébergement à Marseille
                     </h3>
@@ -215,9 +209,10 @@
                                         
                             </div>
                             <div class="pochondermukherContent">
-                                <h3 class="pochondermukherCaptionTitle">Hôtel le soleil du matin</h3>
-                                <p class="pochondermukherDescription">Nuit à partir de <strong class="pochondermukherstrong">128€</strong></p>
-                                <!-- <div class="shadajaga"></div> -->
+                                <div class="shadajaga">
+                                    <h3 class="pochondermukherCaptionTitle">Hôtel le soleil du matin</h3>
+                                    <p class="pochondermukherDescription">Nuit à partir de <strong class="pochondermukherstrong">128€</strong></p>
+                                </div>
                                 <div class="pochondermukhertaragulo">
                                     <i class="fas fa-star pochondertaragulorekta" data-active="true"></i>
                                     <i class="fas fa-star pochondertaragulorekta" data-active="true"></i>
@@ -235,8 +230,10 @@
                                         
                             </div>
                             <div class="pochondermukherContent">
-                                <h3 class="pochondermukherCaptionTitle">Au coeur de l'eau Chambre d'hôtes</h3>
-                                <p class="pochondermukherDescription">Nuit à partir de <strong class="pochondermukherstrong">71€</strong></p>
+                                <div class="shadajaga">
+                                    <h3 class="pochondermukherCaptionTitle">Au coeur de l'eau Chambre d'hôtes</h3>
+                                    <p class="pochondermukherDescription">Nuit à partir de <strong class="pochondermukherstrong">71€</strong></p>
+                                </div>
                                 <div class="pochondermukhertaragulo">
                                     <i class="fas fa-star pochondertaragulorekta" data-active="true"></i>
                                     <i class="fas fa-star pochondertaragulorekta" data-active="true"></i>
@@ -253,8 +250,10 @@
                                         
                             </div>
                             <div class="pochondermukherContent">
-                                <h3 class="pochondermukherCaptionTitle">Hôtel tout bleu et blanc</h3>
-                                <p class="pochondermukherDescription">Nuit à partir de <strong class="pochondermukherstrong">68€</strong></p>
+                                <div class="shadajaga">
+                                    <h3 class="pochondermukherCaptionTitle">Hôtel tout bleu et blanc</h3>
+                                    <p class="pochondermukherDescription">Nuit à partir de <strong class="pochondermukherstrong">68€</strong></p>
+                                </div>
                                 <div class="pochondermukhertaragulo">
                                     <i class="fas fa-star pochondertaragulorekta" data-active="true"></i>
                                     <i class="fas fa-star pochondertaragulorekta" data-active="true"></i>
@@ -270,13 +269,13 @@
         </div>
 
         <!-- ACTIVITY -->
-        <div class="activity" id="link2">
+        <div class="activity" id="activites">
             <h2 class="atitle">Activités à Marseille</h2>
             <div class="borota">
                 <div class="prothomta">
                     <a href="#" class="acti">
                         <div class="prothomtaimg">
-                            <img src="./img/activity/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="chotoimg">
+                            <img src="./img/activity/small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="chotoimg">
                         </div>
                         <h3>Vieux Port</h3>
                             
@@ -295,7 +294,7 @@
                     <div class="ditioditiota">
                         <a href="#" class="acti">
                             <div class="ditioditiotaimg">
-                                <img src="./img/activity/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="chotoimg">
+                                <img src="./img/activity/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class="chotoimg">
                             </div>
                             <h3>Île du Frioul</h3>
                         </a>
@@ -304,7 +303,7 @@
                 <div class="tritiota">
                     <a href="#" class="acti">
                         <div class="tritiotaimg">
-                            <img src="./img/activity/medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="chotoimg">
+                            <img src="./img/activity/small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="chotoimg">
                         </div>
                         <h3>Parc National des Calanques</h3>
                     </a>
@@ -313,7 +312,7 @@
                     <div class="lastaprothomta">
                         <a href="#" class="acti">
                             <div class="lastaprothomtaimg">
-                                <img src="./img/activity/medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="chotoimg">
+                                <img src="./img/activity/small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="chotoimg">
                             </div>
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </a>
